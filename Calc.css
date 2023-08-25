@@ -114,10 +114,10 @@ button{
   .container{
     border:none
   }
-button{
+/* button{
     height: 80px;
     width: 80px;
-}
+} */
 .numbers-container{
     display: grid;
     row-gap: 20px;
