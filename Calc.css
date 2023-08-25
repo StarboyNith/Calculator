@@ -1,0 +1,134 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border: none;
+    
+}
+.container{
+    border: 1px solid white;
+    
+    
+    
+}
+.keys{
+    position: relative;
+    display: block;
+    width: 500px;
+    position: relative;
+    border-top: 2px solid white;
+    border-style: ridge;
+    border: none;
+        
+    
+}
+p{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: scroll;
+    align-items: center;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    height: 170px;
+    width: 440px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:80px;
+    background-color: whitesmoke;
+    border: 1px solid ;
+    box-shadow: inset 2px -18px 6px rgb(49, 49, 49);
+ 
+}
+.numbers-container{
+    margin-top:1px;
+    width: 100%;
+    height: fit-content;
+    border: none;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    align-items: center;
+    justify-content: flex-start; 
+    gap:5px; 
+    position: relative;
+    padding-left: 45px;
+   
+}
+button{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: none;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: bold;
+    box-shadow: -1px -1px rgb(102, 102, 102);
+    
+}
+
+.numbers{
+    background-color: rgb(19, 19, 19);
+}
+.symbols-container{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 40px;
+    align-items: center;
+    gap: 5px;
+    border: none;
+    
+}
+.symbols{
+    background-color: orange;
+}
+.reset{
+    color: white;
+    background-color: rgb(19,19, 19) ;
+}
+@media screen and (max-width:500px ){
+    /* body{
+        background-color: aqua;
+    } */
+    .container{
+        display:grid;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        
+        
+    }
+  
+  p{
+    color: black;
+    background-color: white;
+    height:100px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .container{
+    border:none
+  }
+button{
+    height: 80px;
+    width: 80px;
+}
+.numbers-container{
+    display: grid;
+    row-gap: 20px;
+    justify-content: flex-start;
+    margin: auto;
+
+}
+.symbols-container{
+    display: grid;
+    justify-content: flex-end;
+    margin: auto;
+    row-gap: 20px;
+}
+}

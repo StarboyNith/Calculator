@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Calc.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculater</title>
+</head>
+<body
+><div class="container">
+    <p class="display"></p>
+
+    <div class="keys">
+        <div class="numbers-container">
+            <button class="numbers" onclick="calc('1') ">
+            1
+                </button>
+                <button
+                class="numbers"onclick="calc('2') ">2</button>
+                <button
+                class="numbers"onclick="calc('3') ">3</button>
+                <button
+                class="numbers"onclick="calc('4') ">4</button>
+                <button
+                class="numbers"onclick="calc('5')">5</button>
+                <button
+                class="numbers"onclick=" calc('6')">6</button>
+                <button
+                class="numbers"onclick="calc('7') ">7</button>
+                <button
+                class="numbers"onclick=" calc('8')">8</button>
+                <button
+                class="numbers" onclick="calc('9') ">9</button>
+                <button
+                class="numbers" onclick="calc('0') ">0</button>
+                <button class="numbers" onclick="calc('.')">.</button>
+                <button class="numbers" onclick="
+            
+                calculation = eval(calculation)
+                displayCalc();
+                localStorage.setItem('calculation',calculation);
+                
+                " >=</button>
+                <button class='reset' onclick='calculation = "";
+                displayCalc();
+                localStorage.setItem("calculation",calculation)'>Clear</button>
+            </div>
+                
+                <div class="symbols-container">
+                    <button class="symbols" onclick="calc('+')">+</button>
+                <button class="symbols" onclick="calc('-') ">-</button>
+                <button class="symbols" onclick="calc('*') ">*</button>
+                <button class="symbols" onclick="calc('/') ">/</button>
+                <div>
+</div>
+  
+</div>
+   <script src="Calc.js">
+
+    
+   </script>
+</body>
+</html>
